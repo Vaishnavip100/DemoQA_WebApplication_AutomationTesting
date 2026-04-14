@@ -1,0 +1,26 @@
+<suite name="Suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+        <listener class-name="utils.RetryListener"/>
+    </listeners>
+
+    <test name="Forms">
+        <classes>
+            <class name="tests.FormTest"/>
+        </classes>
+    </test>
+
+    <test name="WebTables">
+        <classes>
+            <class name="tests.WebTableTest"/>
+        </classes>
+    </test>
+
+    <test name="Others">
+        <classes>
+            <class name="tests.WidgetsTest"/>
+            <class name="tests.WindowTest"/>
+            <class name="tests.FramesTest"/>
+        </classes>
+    </test>
+</suite>
